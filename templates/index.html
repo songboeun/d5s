@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt ie 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if ie 7]>         <html class="lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if ie 8]>         <html class="lt-ie9 ie8"> <![endif]-->
+<!--[if gt ie 8]><!--> <html class=""> <!--<![endif]-->
+<head>
+<title></title>
+<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
+<meta charset="UTF-8" />
+<meta name="author" content="디자이너 김샛별" />
+<meta name="keywords" content="디자이너 김샛별" />
+<meta name="description" content="디자이너 김샛별의 홈페이지입니다." />
+<link rel="icon" href="{{ url_for('static', filename='asset/favicon.ico') }}" type="image/x-icon" />
+</head>
+<body>
+  <!-- 상단 메뉴 영역 -->
+  <div id="wrapper" class="wrapper">
+    <div class="topdiv">
+      <ul class="topdiv-menu">
+        <li>카테고리 1</li>
+        <li>카테고리 2</li>
+        <li>카테고리 3</li>
+        <li>카테고리 4</li>
+      </ul>
+    </div>
+    {% block content %}
+    <!-- 이부분에 내용 들어감 -->
+    {% endblock content %}
+  </div>
+
+  <div class="footer">
+    <div class="inner-container">
+      <div class="">
+        <div class="footer-mail">
+          <a class="mail-link" href="mailto:mail@mail.com">mail@mail.com</a>
+        </div>
+        <div class="">
+          2014 © All Rights Reserved.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+
+</body>
+</html>

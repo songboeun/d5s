@@ -1,0 +1,10 @@
+*.pyc
+.Python
+package.json
+.bowerrc
+local/
+bin/
+lib/
+include/
+guide/
+env
