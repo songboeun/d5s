@@ -8,3 +8,6 @@ lib/
 include/
 guide/
 env
+dist
+*.egg-info/
+*.egg
