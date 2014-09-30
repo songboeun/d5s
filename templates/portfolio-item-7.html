@@ -1,1 +1,11 @@
 {% extend 'portfolio-item-template.html' %}
+{% block portfolio_item %}
+<div class="item">
+  <!-- 작품 이미지를 자유롭게 추가하면 됩니다. -->
+  <img src="http://lorempixel.com/600/400">
+  <!-- description <div></div> 사이에 설명하는 내용을 적으면 됩니다. -->
+  <div class="description">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare orci sed volutpat pretium. Nulla facilisi. Aliquam pellentesque cursus massa, id lobortis magna gravida faucibus. Ut quis dignissim felis. Donec non dictum ligula. Cras gravida auctor sapien, non aliquam magna placerat nec. Curabitur gravida erat nunc, a porta velit imperdiet vel. Aenean adipiscing bibendum tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+  </div>
+</div>
+{% endblock %}

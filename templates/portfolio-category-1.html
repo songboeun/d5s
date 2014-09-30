@@ -1,1 +1,18 @@
-{% extend 'portfolio-category-template.html' %}
+<!--
+카테고리 페이지입니다. 
+item-thumbnails 아래에 <li> ... </li> 사이에 있는 것이 썸네일 이미지들이며, <a href=""> 에 주소를 써 주면 됩니다.
+href="" 안에는 app.py에 @app.route()안에 써 준 주소를 써주면 됩니다. 예: /portfolio/8
+-->
+<div class="content">
+  <ul class="item-thumbnails">
+    <!-- -->
+    <li><img src="http://lorempixel.com/300/300" class="item-img"><a href="/portfolio/1">작품 1</a></li>
+    <li><img src="http://lorempixel.com/300/300" class="item-img"><a href="/portfolio/2">작품 2</a></li>
+    <li><img src="http://lorempixel.com/300/300" class="item-img"><a href="/portfolio/3">작품 3</a></li>
+    <li><img src="http://lorempixel.com/300/300" class="item-img"><a href="/portfolio/4">작품 4</a></li>
+    <li><img src="http://lorempixel.com/300/300" class="item-img"><a href="/portfolio/5">작품 5</a></li>
+    <li><img src="http://lorempixel.com/300/300" class="item-img"><a href="/portfolio/6">작품 6</a></li>
+    <li><img src="http://lorempixel.com/300/300" class="item-img"><a href="/portfolio/7">작품 7</a></li>
+    <li><img src="http://lorempixel.com/300/300" class="item-img"><a href="/portfolio/8">작품 8</a></li>
+  </ul>
+</div>
