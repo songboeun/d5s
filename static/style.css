@@ -1,5 +1,11 @@
 @import 'reset.css';
 
+/* Element style reset*/
+a:link, a:active, a:hover, a:visited {
+  color: #333;
+}
+
+/* index */
 .wrapper {
 
 }
@@ -12,9 +18,19 @@
 .header-line {
 
 }
+.header-logo {
+
+}
 .topdiv-menu {
 
 }
+.topdiv-menu li {
+
+}
+.topdiv-menu li a {
+
+}
+/* footer */
 .footer {
 
 }
@@ -30,9 +46,27 @@
 .footer .copyright {
 
 }
+/* content area */
 .content {
 
 }
+/* categories */
+.item-thumbnails {
+
+}
+.item-thumbnails ul {
+
+}
+.item-thumbnails ul li{
+
+}
+.item-thumbnails ul li img{
+
+}
+.item-thumbnails ul li a{
+
+}
+/* portfolio item */
 .portfolio-item {
 
 }
