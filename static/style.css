@@ -1,8 +1,16 @@
+/*
+Author:  Jaeho Lee (jay@spoqa.com), Sungwon Moon (longfin@spoqa.com)
+Project: http://github.com/sairion/d5s
+*/
 @import 'reset.css';
 
 /* Element style reset*/
 a:link, a:active, a:hover, a:visited {
   color: #333;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 /* index */
