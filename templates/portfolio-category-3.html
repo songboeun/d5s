@@ -1,3 +1,5 @@
+{% extends 'index.html' %}
+{% block content %}
 <!--
 카테고리 페이지입니다. 
 item-thumbnails 아래에 <li> ... </li> 사이에 있는 것이 썸네일 이미지들이며, <a href=""> 에 주소를 써 주면 됩니다.
@@ -16,3 +18,4 @@ href="" 안에는 app.py에 @app.route()안에 써 준 주소를 써주면 됩�
     <li><img src="http://lorempixel.com/300/300" class="item-img"><a href="/portfolio/8">작품 8</a></li>
   </ul>
 </div>
+{% endblock %}
