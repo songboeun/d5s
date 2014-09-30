@@ -69,15 +69,22 @@ a:hover {
 
 }
 .item-thumbnails {
-
+  width: 80%;
+  margin: 0 auto;
 }
-.item-thumbnails li{
-
+.item-thumbnails li {
+  float: left;
+  width: 30%;
+  margin-right: 3.33333333%;
 }
-.item-thumbnails li img{
-
+.item-thumbnails li:nth-child(3n) {
+  margin-right: 0;
 }
-.item-thumbnails li a{
+.item-thumbnails li img {
+  width: 100%;
+  height: auto;
+}
+.item-thumbnails li a {
 
 }
 /* portfolio item */
