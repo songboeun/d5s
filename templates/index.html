@@ -31,8 +31,13 @@
       </ul>
     </div>
     <div class="content">
-      {% block content %}
       <!-- 이부분에 내용 들어감 -->
+      {% block content %}
+      <div class="main-content">
+        <h3 class="feat-title">Featured Work</h3>
+        <img class="feat-img" src="http://lorempixel.com/700/400">
+        <h4 class="feat-subtitle">작품 이름</h6>
+      </div>
       {% endblock content %}
     </div>
     <div class="footer">
