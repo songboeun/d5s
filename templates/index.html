@@ -6,11 +6,12 @@
 <head>
 <title>디자이너 김샛별</title>
 <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
-<meta charset="UTF-8" />
+<meta charset="utf-8" />
 <meta name="author" content="디자이너 김샛별" />
 <meta name="keywords" content="디자이너 김샛별" />
 <meta name="description" content="디자이너 김샛별의 홈페이지입니다." />
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+<link href='//cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.css' rel='stylesheet' type='text/css'>
 <link rel="icon" href="{{ url_for('static', filename='asset/favicon.ico') }}" type="image/x-icon" />
 </head>
 <body>
@@ -34,9 +35,15 @@
       <!-- 이부분에 내용 들어감 -->
       {% block content %}
       <div class="main-content">
-        <h3 class="feat-title">Featured Work</h3>
-        <img class="feat-img" src="http://lorempixel.com/700/400">
-        <h4 class="feat-subtitle">작품 이름</h6>
+        <h3 class="feat-title">Featured Works</h3>
+        <!-- 슬라이더 영역 -->
+        <ul id="bxslider">
+          <li><a href="/portfolio/1"><img class="feat-img" src="http://lorempixel.com/700/400/fashion/1"></a></li>
+          <li><a href="/portfolio/1"><img class="feat-img" src="http://lorempixel.com/700/400/fashion/2"></a></li>
+          <li><a href="/portfolio/1"><img class="feat-img" src="http://lorempixel.com/700/400/fashion/3"></a></li>
+          <li><a href="/portfolio/1"><img class="feat-img" src="http://lorempixel.com/700/400/fashion/4"></a></li>
+        </ul>
+        <!-- 슬라이더 영역 끝 -->
       </div>
       {% endblock content %}
     </div>
@@ -58,5 +65,19 @@
 
 </div>
 <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+<script src="//cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.min.js"></script>
+<!-- 슬라이더 초기화 -->
+<script>
+var $masonryContainer = $('.item-thumbnails'),
+    $bxSliderContainer = $('#bxslider');
+
+if ($bxSliderContainer.length !== 0) {
+  $bxSliderContainer.bxSlider({
+    adaptiveHeight: true,
+    mode: 'fade',
+    controls: false
+  });
+}
+</script>
 </body>
 </html>
