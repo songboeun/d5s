@@ -20,17 +20,21 @@
     <div class="topdiv">
       <div class="header">
         <h1 class="header-line"><a href="/">Saetbyeol Lee, Designer</a></h1>
-        <a href="/">
-          <img src="http://lorempixel.com/150/150" class="header-logo">
+        <a href="/" class="header-logo-wrap">
+          <img src="http://lorempixel.com/150/150" class="header-logo-img">
         </a>
       </div>
-      <ul class="topdiv-menu">
+      <div class="divider"></div>
+      <!-- 메뉴 영역 -->
+      <ul class="topdiv-menu clearfix">
         <li><a href="/category/1">카테고리 1</a></li>
         <li><a href="/category/2">카테고리 2</a></li>
         <li><a href="/category/3">카테고리 3</a></li>
         <li><a href="/category/4">카테고리 4</a></li>
       </ul>
+      <!-- 메뉴 영역 끝 -->
     </div>
+    <div class="divider"></div>
     <div class="content">
       <!-- 이부분에 내용 들어감 -->
       {% block content %}
@@ -47,6 +51,7 @@
       </div>
       {% endblock content %}
     </div>
+    <div class="divider"></div>
     <div class="footer">
       <div class="inner-container">
         <div class="footer-mail">
