@@ -20,6 +20,11 @@ def index():
     return render_template('index.html')
 
 
+@app.route("/about")
+def about():
+    return render_template('about.html')
+
+
 # 카테고리 페이지들
 @app.route("/category/1")
 def category_1():
