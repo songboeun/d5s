@@ -1,0 +1,5 @@
+{
+  "name": "d5s Portfolio Webapp",
+  "description": "D5s is a Flask web app with educational purpose for designers.",
+  "keywords": ["python", "Flask", "portfolio", "designer"]
+}
